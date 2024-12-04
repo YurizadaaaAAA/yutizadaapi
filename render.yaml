@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: file-upload-api
+    env: node
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: PORT
+        value: 3000 
